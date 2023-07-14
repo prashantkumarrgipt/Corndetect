@@ -1,6 +1,6 @@
 <div align="center">
 
-## Corn Detect [Recognition of Plant Diseases by Leaf Image Classification]
+## Corn Detect [Recognition of Corn Diseases by Leaf Image Classification]
 
  </div>
 
@@ -16,10 +16,9 @@ use of deep convolutional networks. The developed model is able to recognize 4 d
 ## Leaf Image Classification
 
   <img src="./Assets/features.png" alt="models" />
+    <img src="./Assets/case.png" alt="models" />
 
- <img src="./Assets/case.png alt="models"/>
-
-   <img src="./Assets/predict.png" alt="models" />
+ <img src="./Assets/predict.png" alt="models" />
  
 1. Data gathering
 
@@ -76,11 +75,7 @@ use of deep convolutional networks. The developed model is able to recognize 4 d
 
 This project is Licensed under `MIT`
 
-## Explanation
-
-#To understand the code :` You can find the complete explanation to the code in [Article](https://medium.com/@soumyajit4419/plant-ai-c8fc95ed90e6?  
-# source=friends_link&sk=4707825cbaefa2dcaaa92d0e3ed5de01)
-
+ 
 
 ### Show your support
 
