@@ -49,12 +49,7 @@ use of deep convolutional networks. The developed model is able to recognize 4 d
 
  
  <br/>
-
-## Details about the model
-
-### The model will be able to detect `3` types of `diseases`  
-
-- The detail list of plants and diseases can be seen in [List](Src)
+ 
 
 ## Further Work:
 
