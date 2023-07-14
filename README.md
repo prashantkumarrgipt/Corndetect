@@ -47,13 +47,12 @@ use of deep convolutional networks. The developed model is able to recognize 4 d
 
 5. Various Model Architecture tried along with Learning Rate and Optimizer and various accuracy obtained with different models.
 
-  <img src="./Assets/models.png" alt="models" />
-
+ 
  <br/>
 
 ## Details about the model
 
-### The model will be able to detect `38` types of `diseases` of `14 Unique plants`
+### The model will be able to detect `3` types of `diseases`  
 
 - The detail list of plants and diseases can be seen in [List](Src)
 
