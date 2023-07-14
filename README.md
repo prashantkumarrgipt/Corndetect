@@ -25,7 +25,7 @@ use of deep convolutional networks. <br>
  <br>
 1. Data gathering
 
-   The dataset taken was **"kaggle"**. It can be downloaded through the link "https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
+   The dataset taken was **"kaggle"**. It can be downloaded through the link "https://www.kaggle.com/datasets/buffyhridoy/corn-disease". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
 
 2. Model building
 
