@@ -11,12 +11,15 @@
    <img src="./Assets/Screenshot 2023-07-10 121741.png" alt="models" />
 
 
-This project is an approach to the development of corn disease recognition model, based on corn leaf image classification, by the
-use of deep convolutional networks. The developed model is able to recognize 4 different types of corn diseases.
+
+
 ## Leaf Image Classification
 
   <img src="./Assets/features.png" alt="models" />
+  This project is an approach to the development of corn disease recognition model, based on corn leaf image classification, by the
+use of deep convolutional networks. 
     <img src="./Assets/case.png" alt="models" />
+    The developed model is able to recognize 4 different types of corn diseases.
 
  <img src="./Assets/predict.png" alt="models" />
  
