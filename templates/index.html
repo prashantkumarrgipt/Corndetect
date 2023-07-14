@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corn-Detect</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--//booststrap end-->
+
+  <!--popper Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!--jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!---->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+  
+
+  <!-- font-awesome icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- //font-awesome icons -->
+
+  <!--stylesheets-->
+  <link href="../static/styles/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>  
+
+</head>
+
+<body>
+  <div class="main-top" id="home">
+    <!-- header -->
+    <div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1><a href="">Corn-Detect</a></h1>
+        </div>
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
+        <ul class="menu mt-2">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about" style="cursor: pointer;">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li>
+            <a href="{{url_for('testPage')}}">Detect</a>
+        </li>
+           </ul>
+      </nav>
+      <!-- //nav -->
+    </div>
+    <!-- //header -->
+    <!-- banner -->
+    <div class="main-banner text-center">
+      <div class="container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="style-banner">
+          <h4 class="mb-2">Welcome To Corn-Detect</h4>
+          <h5>Offering Farming Solutions Worldwide
+          </h5>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1000" class="two-demo-button mt-md-4 mt-3">
+          <p> Developing models for making disease detection easy and providing solutions for improving crop production
+          </p>
+        </div> <br>
+        <button  data-aos="fade-up" data-aos-duration="1000"  class="btn btn-primary" type="submit"> <a style="color: white;" href="{{url_for('testPage')}}">Get Started</a> </button>
+      </div>
+    </div>
+  </div>
+  <!-- //banner -->
+
+ <br>
+ <br>
+
+ 
+ <!-- Features -->
+<section class="service pb-5" id="features">
+  <div data-aos="fade-up" data-aos-duration="1000" class="container">
+    <h3 class="title text-center mb-3">Features</h3>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <div class="about-icon mb-md-4 mb-3">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
+            <h4 class="card-title pb-3">Easy Detection</h4>
+            <p>Just need to click and upload leaf image.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <div class="about-icon mb-md-4 mb-3">
+              <i class="fa fa-flask" aria-hidden="true"></i>
+            </div>
+            <h4 class="card-title pb-3">Cause and Solution</h4>
+            <p>Provides the cause and solution of the identified diseases.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 mt-lg-4 mt-3">
+        <div class="card shadow-sm">
+          <div class="card-body text-center">
+            <div class="about-icon mb-md-4 mb-3">
+              <i class="fa fa-leaf" aria-hidden="true"></i>
+            </div>
+            <h4 class="card-title pb-3">Large Plant Support</h4>
+            <p>Supports around 4 major different types of corn disease classes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+  <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <h3 class="title text-center">Why Corn Detect</h3>
+    <br>
+
+    <div class="row">
+
+      <div data-aos="fade-up" data-aos-duration="1000" class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/5.png" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+     
+      <div data-aos="fade-up" data-aos-duration="1000" class="col-lg-6 text-justify about-two-grids pt-3">
+        <h3 class="title text-center"> </h3>
+        <div data-aos="fade-up" data-aos-duration="1000" class="about-para-txt">
+          <p> The versatile Corn Detect app runs seamlessly on all devices, including mobile phones, laptops, and tablets. Whether you're in the field or at your desk, you can easily access and utilize the app's powerful disease detection capabilities. Our user-friendly interface ensures a consistent and optimized experience across various platforms, empowering farmers to detect and manage diseases in corn crops conveniently, regardless of the device they prefer to use. With Corn Detect, you have the flexibility to monitor and safeguard your crops anytime, anywhere.</p>
+          <br>
+          <button class="btn btn-primary" type="submit"> <a style="color: white;" href="{{url_for('testPage')}}">Click to start</a> </button>
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+ <!-- about -->
+ <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+  <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <h3 class="title text-center">Take a Glance at Our User Interface</h3>
+
+    <div class="row">
+      <div data-aos="fade-up" data-aos-duration="1000" class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/a.png" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="1500" class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/b.png" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2000" class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/c.png" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="2500" class="col-lg-6 about-imgs-txt pt-3">
+        <img src="../static/images/d.png" alt="news image" class="img-fluid" style="border-radius: 8px;">
+      </div>
+       
+    </div>
+  </div>
+</section>
+<!-- //about -->
+
+
+ <!-- about -->
+ <section  style="gap:15px;" class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+  <h3 class="title text-center">Case Study</h3>
+  <br>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div data-aos="fade-up" data-aos-duration="1000"  class="card">
+          <img class="card-img-top" src="../static/images/Penicillium Leaf curling (11).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Rhizoctonia seedling blight</h5>
+            <p class="card-text">A soilborne fungus that causes seedling blight in a variety of crops. Symptoms include reddish-brown lesions on the hypocotyls at the soil line.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div data-aos="fade-up" data-aos-duration="1200"  class="card">
+          <img class="card-img-top" src="../static/images/Pythium Chlorotic disease (18).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Pythium Chlorotic disease</h5>
+            <p class="card-text">A water mold that causes chlorosis (yellowing) in a variety of crops. Symptoms include stunted growth, yellowing leaves, and wilting.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div data-aos="fade-up" data-aos-duration="1300"  class="card">
+          <img class="card-img-top" src="../static/images/Rhizoctonia seedling blight (5).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Penicillium Leaf curling</h5>
+            <p class="card-text">A fungus that causes leaf curling in a variety of crops. Symptoms include curled leaves, stunted growth, and reduced yields.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //about -->
+
+  <!-- footer -->
+  <footer>
+    <div class="container pt-5 pb-3">
+      <div  data-aos="fade-up" data-aos-duration="1000" class="footer-w3layouts-head text-center">
+        <h2><a href="">Corn-Detect</a></h2>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000" class="bottem-wthree-footer text-center pt-md-4 pt-3">
+        <p>
+          All Rights Reserved | Develop by Elliot with ❤️ 
+                </p>
+      </div>
+      <!-- move icon -->
+      <div class="text-center">
+        <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </footer>
+  <!--//footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      function previewImage(event) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          var output = document.getElementById('output-image');
+          output.src = reader.result;
+          output.style.display = 'block'; // Display the image
+        }
+        reader.readAsDataURL(event.target.files[0]);
+      }
+    
+      function showProgressBar(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        var fileInput = document.getElementById('inputImage');
+        if (fileInput.files.length === 0) {
+          Swal.fire({
+            icon: 'warning',
+            title: 'No file selected',
+            text: 'Please select an image file to proceed.',
+            confirmButtonText: 'OK',
+            showClass: {
+              popup: 'swal2-animate__zoomIn',
+            },
+            hideClass: {
+              popup: 'swal2-animate__zoomOut',
+            }
+          });
+          return; // Exit function if no file selected
+        }
+        
+        var progressBarContainer = document.getElementById('progress-bar-container');
+        progressBarContainer.style.display = 'block';
+    
+        var progressBar = document.getElementById('progress-bar');
+        var width = 0;
+        var intervalId = setInterval(frame, 10);
+    
+        function frame() {
+          if (width >= 100) {
+            clearInterval(intervalId);
+          } else {
+            width++;
+            progressBar.style.width = width + '%';
+          }
+        }
+        
+        // Submit the form after a delay (for demonstration purposes)
+        setTimeout(function () {
+          event.target.form.submit();
+        }, 2000); // Adjust the delay time as needed
+      }
+      
+    </script>
+
+   
+<script>
+  function predictImage() {
+    var fileInput = document.getElementById('fileInput');
+    var file = fileInput.files[0];
+
+    var formData = new FormData();
+    formData.append('file', file);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '/predict', true);
+    xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        if (response.error) {
+          // Handle error case, show error message
+          document.getElementById('errorMessage').innerHTML = response.error;
+          document.getElementById('errorContainer').style.display = 'block';
+        } else {
+          // Handle success case, show result
+          document.getElementById('result').innerHTML = response.result;
+          document.getElementById('resultContainer').style.display = 'block';
+        }
+      }
+    };
+    xhr.send(formData);
+  }
+</script>
+
+ 
+ <script>
+ var cards = document.querySelectorAll(".cards");
+var interval = setInterval(function() {
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+    var left = card.offsetLeft;
+    left += 10;
+    card.style.left = left + "px";
+    if (left >= window.innerWidth) {
+      left = 0;
+    }
+  }
+}, 100);
+ </script>
+    
+  
+ 
+  <script>
+   AOS.init({
+  duration: 800, // Animation duration in milliseconds
+easing: 'ease-in-out', // Easing function for the animation
+ once: true // Whether to animate elements only once or on every scroll
+});
+
+  </script>
+    
+   
+    
+</body>
+
+</html>

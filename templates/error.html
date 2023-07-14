@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corn-Detect</title>
+  <!--meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--//meta tags ends here-->
+  <!--booststrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--//booststrap end-->
+
+  <!-- font-awesome icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- //font-awesome icons -->
+
+  <!--stylesheets-->
+  <link href="../static/styles/style.css" rel='stylesheet' type='text/css' media="all">
+  <!--//stylesheets-->
+
+</head>
+
+<body>
+  <!--headder-->
+  <div class="header-outs inner_page-banner" id="home">
+    <div class="headder-top">
+      <!-- nav -->
+      <nav>
+        <div id="logo">
+          <h1><a href="/">Corn-Detect</a></h1>
+        </div>
+
+      </nav>
+      <!-- //nav -->
+    </div>
+  </div>
+  <!--//headder-->
+  <!-- short -->
+  <div class="using-border py-3">
+    <div class="inner_breadcrumb  ml-4">
+      <ul class="short_ls">
+        <ul class="short_ls">
+          <li>
+            <a href="{{url_for('testPage')}}">Test Again</a>
+        </ul>
+    </div>
+  </div>
+  <!-- //short-->
+  <!-- about -->
+  <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+      <div class="row" style="justify-content: center;">
+        <div class="col-md-10 about-two-grids">
+          <h3 class="mb-md-4 mb-sm-3 mb-3 text-center">Sorry</h3>
+          <div class="about-para-txt text-justify">
+            <p>{{message}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //about -->
+  <section  style="gap:15px;" class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <h5 class="title text-center">Our Model Can Detect Only These Diseases</h5 >
+    <br>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div data-aos="fade-up" data-aos-duration="1000"  class="card">
+            <img class="card-img-top" src="../static/images/Penicillium Leaf curling (11).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Rhizoctonia seedling blight</h5>
+              <p class="card-text">A soilborne fungus that causes seedling blight in a variety of crops. Symptoms include reddish-brown lesions on the hypocotyls at the soil line.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div data-aos="fade-up" data-aos-duration="1200"  class="card">
+            <img class="card-img-top" src="../static/images/Pythium Chlorotic disease (18).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pythium Chlorotic disease</h5>
+              <p class="card-text">A water mold that causes chlorosis (yellowing) in a variety of crops. Symptoms include stunted growth, yellowing leaves, and wilting.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div data-aos="fade-up" data-aos-duration="1300"  class="card">
+            <img class="card-img-top" src="../static/images/Rhizoctonia seedling blight (5).jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Penicillium Leaf curling</h5>
+              <p class="card-text">A fungus that causes leaf curling in a variety of crops. Symptoms include curled leaves, stunted growth, and reduced yields.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="container pt-5 pb-3">
+      <div class="footer-w3layouts-head text-center">
+        <h2><a href="index.html">Corn-Detect</a></h2>
+      </div>
+      <div class="bottem-wthree-footer text-center pt-md-4 pt-3">
+        <p>
+    All Rights Reserved | Develop by Elliot with ❤️
+        </p>
+      </div>
+      <!-- move icon -->
+      <div class="text-center">
+        <a href="#home" class="move-top text-center mt-3"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+      </div>
+      <!--//move icon -->
+    </div>
+  </footer>
+  <!--//footer -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
