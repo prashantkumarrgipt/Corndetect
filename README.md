@@ -17,12 +17,12 @@
 
   <img src="./Assets/features.png" alt="models" />
   This project is an approach to the development of corn disease recognition model, based on corn leaf image classification, by the
-use of deep convolutional networks. 
-    <img src="./Assets/case.png" alt="models" />
+use of deep convolutional networks. <br>
+   <br> <img src="./Assets/case.png" alt="models" />
     The developed model is able to recognize 4 different types of corn diseases.
-
+<br>
  <img src="./Assets/predict.png" alt="models" />
- 
+ <br>
 1. Data gathering
 
    The dataset taken was **"kaggle"**. It can be downloaded through the link "https://www.kaggle.com/vipoooool/new-plant-diseases-dataset". It is an Image dataset containing images of different healthy and unhealthy crop leaves.
